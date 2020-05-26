@@ -1,0 +1,7 @@
+.bottomInput{
+    color: red;
+    align-self: center;
+    justify-content: center;
+    object-position: bottom;
+    display: grid
+}
