@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="page" id="contentDiv">
+
+    </div>
+     
+    <script>
+        //model
+        const content = document.getElementById("contentDiv")
+        let strenghts = '';
+        //view
+        show()
+        function show(){
+            content.innerHTML = `
+        <div class="header">
+            <h1 class="groupName">Group name goes here</h1>
+        </div>
+        <div class="menu">
+            <h4>Navigation menu</h4>
+            <a  href="groupSelectPage.html">
+                <button class="menuButton">Group Select</button>
+            </a>
+            <a>
+                <button class="menuButton">Personal</button>
+            </a>
+            <div id="menuGroupLink"></div>
+            <a>
+                <button class="menuButton">end</button>
+            </a>
+        </div>
+        <div id="strenghtNotes" class="content">
+            ${strenghts}
+            <img class="tm" src="DI-logo.png" alt="Diversity Icebreaker Logo"/>
+        </div>
+        <div class="input">
+            <input onchange="addStrenght(this.value)" class="inputBox" type="text">
+        </div>
+    </div>
+            `
+        }
+        function addStrenght(strenghtText){
+            let textere = '';
+            textere += `<div class="stickyNotes">${strenghtText}</div>`
+            strenghts += textere
+            show()
+        }
+        //controller
+    </script>
+</body>
+</html>
