@@ -1,7 +1,7 @@
 //model
 const contentDiv = document.getElementById('contentDiv');
 let posX, posY, posXMouse, posYMouse;
-let currentSelectedPage = 0; //0 = group select 1 = aboutcolors 2 = summary
+let currentSelectedPage = 0; //0 = group select 1 = aboutcolors 2 = summary 3 = peronal notes
 let currentlySelectedGroup = 0; //0 = self 1 = next color 2 = next color
 let generateGroups = {
     blue: 1,
@@ -15,8 +15,8 @@ let groups = [{
         ID: 1,
         content: "text",
         aboutColor: "red",
-        agree: true,
-        disagree: false,
+        agree: 0,
+        disagree: 0,
         posX: 100, //x
         posY: 300, //y
         zIndex: 1
