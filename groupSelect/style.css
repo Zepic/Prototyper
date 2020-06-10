@@ -1,0 +1,37 @@
+body{
+    background-color: black;
+}
+.note{
+    color: white;
+    background-color: rgb(245, 65, 59);
+    border: solid rgb(255, 14, 14);
+    position: absolute;
+    text-align: center;
+    font-size: large;
+    height: 50px;
+    width: 75px;
+}
+.note0{
+    left: 100px;
+    top: 300px;
+}
+.note1{
+    left: 200px;
+    top: 300px;
+}
+.note2{
+    left: 500px;
+    top: 300px;
+}
+.note3{
+    left: 100px;
+    top: 500px;
+}
+.note4{
+    left: 100px;
+    top: 100px;
+}
+.note5{
+    left: 100px;
+    top: 200px;
+}
