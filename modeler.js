@@ -7,20 +7,40 @@ const model = {
     currentSelectedPage: 0, //0 = group select 1 = aboutcolors 2 = summary 3 = peronal notes
     currentlySelectedGroup: 0, //0 = self 1 = next color 2 = next color
     groupCounts: {
-        blue: 1,
-        green: 1,
+        blue: 2,
+        green: 2,
         red: 2,
     },
     groups: [
         {
-            name: "Red1",
+            name: "red 1",
             color: "red",            
+        },
+        {
+            name: "green 1",
+            color: "green",            
+        },
+        {
+            name: "blue 1",
+            color: "blue",            
+        },
+        {
+            name: "red 2",
+            color: "red",            
+        },
+        {
+            name: "green 2",
+            color: "green",            
+        },
+        {
+            name: "blue 2",
+            color: "blue",            
         }
     ],
     notes: [
         {// how the model of the notes would look.
             ID: 1,
-            content: "text",
+            content: "Social",
             aboutColor: "red",
             group: 'red 1',
             agree: 3,//['Terje', 'Per', 'Espen'],
